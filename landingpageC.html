@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        font-family: 'Montserrat', sans-serif;
+        color: aliceblue;
+    }
+    #Botao, #senha, #email, #usuario, #data{
+        color: black;
+    }
+    body{
+        margin: 0;
+        background-color: rgb(85, 166, 217);
+    }
+    .Cabeça{
+        position: sticky;
+        background: linear-gradient(to right, rgb(33, 59, 128), rgb(20, 36, 90));
+        /* background-color: rgb(83, 167, 85); */
+        height: 120px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+    .direita {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* empurra tudo pra direita */
+    gap: 20px; /* espaço entre os botões e a barra de pesquisa */
+}
+    .Opçoes{
+        display: flex;
+        gap: 40px;
+    }
+    .opçao{
+        display: grid;
+        place-items: center;
+        background: linear-gradient(to bottom, #28a745, #1e7037);
+        height: 35px;
+        width: 100px;
+        border-radius: 5%;
+        cursor: default;
+    }
+    #mural, #op1, #op2{
+        transition: transform 1s ease;
+    }
+    #mural:hover, #op1:hover, #op2:hover{
+        transform: scale(1.1);
+    }
+    #op1{
+        font-size: 12px;
+    }
+    .pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.pesquisa input[type="text"] {
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    flex: 1;
+    outline: none;
+}
+
+    .Logo{
+        margin: 20px;
+        font-size: 50px;
+    }
+
+
+
+
+    .Peito{
+        position: sticky;
+        height: 825px;
+        display: flex;
+       background: linear-gradient(to bottom, #28a745, #1e7037);
+       justify-content: center;
+        align-items: center;
+        gap: 500px;
+        
+    }
+    .membro{
+         background: linear-gradient(to bottom, #ffffff, #e0e0e0);
+        height: 600px;
+        width: 500px;
+        border-radius: 5%;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    }
+a{
+    text-decoration: none;
+}
+</style>
+<body>
+    <div class="Cabeça">
+        <div class="Logo">
+            <a href="landpage.html"><img src="M.svg" alt="Logo MW" width="200"></a>
+        </div>
+        <div class="direita">
+            <div class="Opçoes">
+            <a href="landingpageM.html"><div class="opçao" id="mural">mural</div></a>
+            <a href="landingpageC.html"><div class="opçao" id="op1">Comentarios</div></a>
+            <a href="landingpageP.html"><div class="opçao" id="op2">Projeto</div></a>
+            </div>
+            <div class="pesquisa">
+                <input type="text" name="Pesquisar...">
+            </div>
+        </div>
+    </div>
+    <div class="Peito">
+        <div class="membro"></div>
+        <div class="membro"></div>
+    </div>
+</body>
+</html>

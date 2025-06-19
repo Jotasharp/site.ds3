@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        font-family: 'Montserrat', sans-serif;
+        color: aliceblue;
+    }
+    #Botao, #senha, #email, #usuario, #data{
+        color: black;
+    }
+    body{
+        margin: 0;
+        background-color: rgb(85, 166, 217);
+    }
+    .Cabeça{
+        position: sticky;
+         background: linear-gradient(to right, rgb(33, 59, 128), rgb(20, 36, 90));
+        /* background-color: rgb(83, 167, 85); */
+        height: 120px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+    .direita {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* empurra tudo pra direita */
+    gap: 20px; /* espaço entre os botões e a barra de pesquisa */
+}
+    .Opçoes{
+        display: flex;
+        gap: 40px;
+    }
+    .opçao{
+        display: grid;
+        place-items: center;
+        background: linear-gradient(to bottom, #28a745, #1e7037);
+        height: 35px;
+        width: 100px;
+        border-radius: 5%;
+        cursor: default;
+    }
+    #mural, #op1, #op2{
+        transition: transform 1s ease;
+    }
+    #mural:hover, #op1:hover, #op2:hover{
+        transform: scale(1.1);
+    }
+    #op1{
+        font-size: 12px;
+    }
+    .pesquisa {
+    margin: 30px auto;
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+.pesquisa input[type="text"] {
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+    .Logo{
+        margin: 20px;
+        font-size: 50px;
+    }
+    .Peito{
+        position: sticky;
+        height: 825px;
+        display: flex;
+        background-image: url(parateste.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
+    .Peito::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(85, 166, 217, 0.4); 
+    z-index: 1;
+    }
+
+
+
+    .membro{
+         background: linear-gradient(to right, rgb(33, 59, 128), rgb(20, 36, 90));
+        height: 500px;
+        width: 600px;
+    }
+    
+    #Peitoral{
+        border-radius: 5%;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        display: grid;
+        place-items: center;
+        z-index: 2; 
+    }
+    form {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+}
+
+    form p {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="date"] {
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        font-size: 14px;
+        background-color: #f1f1f1;
+        color: #333;
+        transition: 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="date"]:focus {
+        outline: none;
+        background-color: #fff;
+        border: 2px solid #007BFF;
+    }
+
+    #Botao {
+        padding: 10px;
+        background: linear-gradient(to bottom, #28a745, #1e7037);
+        color: white !important;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    #Botao:hover {
+        background-color: #218838;
+    }
+
+    .Perna{
+            position: sticky;
+            height:200px;
+            /* background-color: white; */
+            background: linear-gradient(to bottom, #28a745, #1e7037);
+        }
+.footer {
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 14px;
+    background: linear-gradient(to bottom, #1e7037, #14542a);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer .contato p {
+    margin: 5px 0;
+}
+
+.footer .links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer .links a:hover {
+    text-decoration: underline;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+</style>
+<body>
+    <div class="Cabeça">
+        <div class="Logo">
+            <img src="M.svg" alt="Logo MW" width="200">
+        </div>
+        <div class="direita">
+            <div class="Opçoes">
+            <a href="landingpageM.html"><div class="opçao" id="mural">mural</div></a>
+            <a href="landingpageC.html"><div class="opçao" id="op1">Comentarios</div></a>
+            <a href="landingpageP.html"><div class="opçao" id="op2">Projeto</div></a>
+            </div>
+            <div class="pesquisa">
+                <input type="text" name="Pesquisar...">
+            </div>
+        </div>
+    </div>
+    <div class="Peito">
+        <div class="membro" id="Peitoral">
+            <h1 margin="100px">Cadastro</h1>
+            <form>
+                <p>Usuario: <input type="text" name="Usuario" id="usuario"></p>
+                <p>Email: <input type="text" name="email" id="email"></p>
+                <p>Senha: <input type="password" name="senha" id="senha"></p>
+                <p>Data: <input type="date" name="Data" id="data"></p>
+                <p><input type="submit" value="Cadastrar" id="Botao"></p>
+            </form>
+        </div>
+
+    </div>
+    <div class="Perna">
+<footer class="footer">
+    <p>© 2025 MW. Todos os direitos reservados.</p>
+
+    <div class="contato">
+        <p><strong>Email:</strong> MW@gmail.com</p>
+        <p><strong>Telefone:</strong> (11) 91234-5678</p>
+        <p><strong>Endereço:</strong> Rua Exemplo, 323 - Nova York, SP</p>
+    </div>
+
+    <div class="links">
+        <a href="#">Sobre</a> |
+        <a href="#">Política de Privacidade</a>
+    </div>
+</footer>
+    </div>
+</body>
+</html>

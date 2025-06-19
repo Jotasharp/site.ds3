@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        font-family: 'Montserrat', sans-serif;
+        color: aliceblue;
+    }
+    #Botao, #senha, #email, #usuario, #data{
+        color: black;
+    }
+    body{
+        margin: 0;
+        background-color: rgb(85, 166, 217);
+    }
+    .Cabeça{
+        position: sticky;
+        background: linear-gradient(to right, rgb(33, 59, 128), rgb(20, 36, 90));
+        /* background-color: rgb(83, 167, 85); */
+        height: 120px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+    .direita {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* empurra tudo pra direita */
+    gap: 20px; /* espaço entre os botões e a barra de pesquisa */
+}
+    .Opçoes{
+        display: flex;
+        gap: 40px;
+    }
+    .opçao{
+        display: grid;
+        place-items: center;
+        background: linear-gradient(to bottom, #28a745, #1e7037);
+        height: 35px;
+        width: 100px;
+        border-radius: 5%;
+        cursor: default;
+    }
+    #mural, #op1, #op2{
+        transition: transform 1s ease;
+    }
+    #mural:hover, #op1:hover, #op2:hover{
+        transform: scale(1.1);
+    }
+    #op1{
+        font-size: 12px;
+    }
+    .pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.pesquisa input[type="text"] {
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    flex: 1;
+    outline: none;
+}
+
+    .Logo{
+        margin: 20px;
+        font-size: 50px;
+    }
+
+
+
+
+    .Peito{
+        position: sticky;
+        height: 3300px;
+        display: flex;
+        flex-direction: column;
+       background: linear-gradient(to bottom, #28a745, #1e7037);
+        gap: 500px;
+    }
+    .org{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   .membro {
+    margin: 190px;
+    color: white;             
+    height: auto;
+    width: 700px; 
+    padding: 20px;                 
+    font-size: 25px;
+    line-height: 1.3;                 
+    text-align: justify;           
+}
+
+a{
+    text-decoration: none;
+}
+</style>
+<body>
+    <div class="Cabeça">
+        <div class="Logo">
+            <a href="landpage.html"><img src="M.svg" alt="Logo MW" width="200"></a>
+        </div>
+        <div class="direita">
+            <div class="Opçoes">
+            <a href="landingpageM.html"><div class="opçao" id="mural">mural</div></a>
+            <a href="landingpageC.html"><div class="opçao" id="op1">Comentarios</div></a>
+            <a href="landingpageP.html"><div class="opçao" id="op2">Projeto</div></a>
+            </div>
+            <div class="pesquisa">
+                <input type="text" name="Pesquisar...">
+            </div>
+        </div>
+    </div>
+    <div class="Peito">
+        <div class="org">
+        <div class="membro" id="1"><Strong>1. Descrição do problema ou necessidade:</Strong>
+A baixa participação da população em audiências públicas é um problema recorrente nas comunidades.
+Grande parte dessa ausência é causada pela falta de divulgação eficiente, o que gera desinformação,
+desinteresse e enfraquece a democracia participativa. A população, muitas vezes, sequer é informada
+sobre a realização desses encontros, perdendo a oportunidade de exercer seu papel cidadão e contribuir
+com decisões importantes para o desenvolvimento da sua comunidade.
+</div>
+<div class="membro" id="2"><strong>2. Proposta da aplicação web como solução:</strong>
+A proposta é desenvolver uma aplicação web com foco na divulgação clara e acessível das audiências
+públicas e outras ações comunitárias. O site funcionará como um mural digital informativo, oferecendo
+dados atualizados sobre datas, locais, temas das audiências e formas de participação. A plataforma
+buscará promover o engajamento cívico por meio de uma interface simples, objetiva e intuitiva, facilitando
+o acesso da população às informações públicas relevantes e incentivando a presença ativa da
+comunidade.
+</div>
+<div class="membro"><strong>3. Definição do público-alvo:</strong>
+O público-alvo da aplicação são cidadãos em geral, especialmente moradores de regiões onde a
+participação popular em decisões públicas é historicamente baixa. A plataforma será voltada para
+pessoas interessadas em acompanhar as ações do poder público, independentemente da idade,
+formação ou acesso prévio à tecnologia, com foco na inclusão digital e social.
+</div>
+<div class="membro"><strong>4. Lista das funcionalidades principais:</strong>
+    <ul>
+        <li>Divulgação de audiências públicas com data, horário, local e tema;</li>
+        <li>Sistema de alerta/notificação para lembrar os usuários sobre eventos próximos;</li>
+        <li>Área de comentários/sugestões para que os cidadãos opinem sobre os temas discutidos;</li>
+        <li>Filtro de busca por tema ou região;</li>
+        <li>Design responsivo para acesso via celular e computador;</li>
+        <li>Integração com redes sociais para ampliar o alcance das publicações.</li>
+    </ul>
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</body>
+</html>
